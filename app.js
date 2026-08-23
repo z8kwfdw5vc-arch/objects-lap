@@ -337,7 +337,7 @@ game.catchPokemon = function(pokemonObj) {
     this.party.push(pokemonObj);
     for (let i = 0; i < this.items.length; i++) {
         if (this.items[i].name === "pokeball") {
-        this.items[i] -=1;
+        this.items[i].quantity -= 1;
     }
     
    }
