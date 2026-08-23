@@ -354,18 +354,13 @@ Solve Exercise 12 here:
 */
 
 
-game.catchPokemon = function(pokemonObj) {
-    this.party.push(pokemonObj);
-
-    for (let i = 0; i < this.items.length; i++) {
-        if (this.items[i].name ==="pokeball"){
-            this.items.quantity -= 1;
-        }
-    }
-    if (this.party.length >= this.collection.length) {
-        return "BAG FULL"
+for (let i = 0; i < game.gyms.length; i++) {
+    if (game.gyms[i].difficulty < 6) {
+        game.gyms[i].completed = true;
     }
 };
+
+
 
 
 
